@@ -14,5 +14,16 @@ class Test(unittest.TestCase):
   def test_it_has_attributes(self):
     self.assertEqual(self.deck.cards, [self.card_1, self.card_2, self.card_3])
 
+  def test_add_card(self):
+    self.assertEqual(self.deck.cards, [self.card_1, self.card_2, self.card_3])
+
+    self.card4 = Card("Geography", "What is it?", "I don't know!")
+    
+    expected = [self.card_1, self.card_2, self.card_3, self.card4]
+    self.deck.add_card(self.card4)
+    self.assertEqual(self.deck.cards, expected)
+    
+
+
 if __name__ == '__main__':
   unittest.main()
