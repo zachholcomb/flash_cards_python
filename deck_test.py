@@ -23,7 +23,9 @@ class Test(unittest.TestCase):
     self.deck.add_card(self.card4)
     self.assertEqual(self.deck.cards, expected)
     
-
+  def test_it_can_get_all_categories(self):
+    expected = ['STEM', 'Geography']
+    self.assertEqual(self.deck.all_categories(), expected)
 
 if __name__ == '__main__':
   unittest.main()

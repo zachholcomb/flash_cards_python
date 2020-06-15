@@ -11,6 +11,6 @@ class Turn:
 
   def feedback(self):
     if self.correct():
-      return 'Correct'
+      return 'Correct!'
     else:
-      return 'Incorrect'
+      return 'Incorrect.'

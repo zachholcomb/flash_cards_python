@@ -21,8 +21,8 @@ class Test(unittest.TestCase):
     self.assertTrue(self.turn2.correct())
 
   def test_feedback(self):
-    self.assertEqual(self.turn.feedback(), 'Incorrect')
-    self.assertEqual(self.turn2.feedback(), 'Correct')
+    self.assertEqual(self.turn.feedback(), 'Incorrect.')
+    self.assertEqual(self.turn2.feedback(), 'Correct!')
 
 if __name__ == '__main__':
   unittest.main()
