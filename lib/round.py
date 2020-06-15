@@ -48,3 +48,4 @@ class Round:
     total_turns = self.turns_by_category(category)
     value = total_correct / total_turns * 100
     return round(value, 2)
+    
